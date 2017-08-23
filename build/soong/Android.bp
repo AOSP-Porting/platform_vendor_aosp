@@ -1,0 +1,7 @@
+bootstrap_go_package {
+    name: "soong-extra",
+    pkgPath: "extra/soong/android",
+    srcs: [
+        "android/variable.go",
+    ],
+}
