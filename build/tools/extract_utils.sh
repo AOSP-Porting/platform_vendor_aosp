@@ -501,29 +501,9 @@ function write_header() {
         rm $1
     fi
 
-    YEAR=$(date +"%Y")
-
     [ "$COMMON" -eq 1 ] && local DEVICE="$DEVICE_COMMON"
 
-    NUM_REGEX='^[0-9]+$'
-    if [[ $INITIAL_COPYRIGHT_YEAR =~ $NUM_REGEX ]] && [ $INITIAL_COPYRIGHT_YEAR -le $YEAR ]; then
-        if [ $INITIAL_COPYRIGHT_YEAR -lt 2016 ]; then
-            printf "# Copyright (C) $INITIAL_COPYRIGHT_YEAR-2016 The CyanogenMod Project\n" > $1
-        elif [ $INITIAL_COPYRIGHT_YEAR -eq 2016 ]; then
-            printf "# Copyright (C) 2016 The CyanogenMod Project\n" > $1
-        fi
-        if [ $YEAR -eq 2017 ]; then
-            printf "# Copyright (C) 2017 The LineageOS Project\n" >> $1
-        elif [ $INITIAL_COPYRIGHT_YEAR -eq $YEAR ]; then
-            printf "# Copyright (C) $YEAR The LineageOS Project\n" >> $1
-        elif [ $INITIAL_COPYRIGHT_YEAR -le 2017 ]; then
-            printf "# Copyright (C) 2017-$YEAR The LineageOS Project\n" >> $1
-        else
-            printf "# Copyright (C) $INITIAL_COPYRIGHT_YEAR-$YEAR The LineageOS Project\n" >> $1
-        fi
-    else
-        printf "# Copyright (C) $YEAR The LineageOS Project\n" > $1
-    fi
+    printf "# Copyright (C) 2017 The LineageOS Project\n" > $1
 
     cat << EOF >> $1
 #
