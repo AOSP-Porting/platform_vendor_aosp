@@ -97,4 +97,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     media.recorder.show_manufacturer_and_model=true
 
+# Accents
+PRODUCT_PACKAGES += \
+    DefaultAccent \
+    PixelAccent
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.boot.vendor.overlay.theme=com.android.theme
+
 DEVICE_PACKAGE_OVERLAYS += vendor/aosp/overlay
