@@ -40,6 +40,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/aosp/config/backup.xml:system/etc/sysconfig/backup.xml
 
+# Backup Tool
+PRODUCT_COPY_FILES += \
+    vendor/aosp/config/backuptool.sh:install/bin/backuptool.sh \
+    vendor/aosp/config/backuptool.functions:install/bin/backuptool.functions
+
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
