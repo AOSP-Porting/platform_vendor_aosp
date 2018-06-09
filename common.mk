@@ -32,10 +32,6 @@ else
     ro.device.cache_dir=/cache
 endif
 
-# APN list
-PRODUCT_COPY_FILES += \
-    vendor/aosp/apns-conf.xml:system/etc/apns-conf.xml
-
 # Backup Services whitelist
 PRODUCT_COPY_FILES += \
     vendor/aosp/config/backup.xml:system/etc/sysconfig/backup.xml
