@@ -106,3 +106,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.boot.vendor.overlay.theme=com.android.theme
 
 DEVICE_PACKAGE_OVERLAYS += vendor/aosp/overlay
+
+$(call inherit-product, external/google-fonts/google-sans/fonts.mk)
