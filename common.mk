@@ -104,7 +104,7 @@ PRODUCT_PACKAGES += \
     PixelAccent
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.boot.vendor.overlay.theme=com.android.theme
+    ro.boot.vendor.overlay.theme=com.google.android.theme.pixel
 
 DEVICE_PACKAGE_OVERLAYS += vendor/aosp/overlay
 
