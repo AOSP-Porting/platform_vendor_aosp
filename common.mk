@@ -38,8 +38,8 @@ PRODUCT_COPY_FILES += \
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
-    vendor/aosp/config/backuptool.sh:install/bin/backuptool.sh \
-    vendor/aosp/config/backuptool.functions:install/bin/backuptool.functions
+    vendor/aosp/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
+    vendor/aosp/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
