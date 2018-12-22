@@ -76,6 +76,11 @@ PRODUCT_PACKAGES += \
     strace \
     tune2fs
 
+# Exfat
+PRODUCT_PACKAGES += \
+    fsck.exfat \
+    mkfs.exfat
+
 # Openssh
 PRODUCT_PACKAGES += \
     scp \
